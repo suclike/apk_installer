@@ -1,7 +1,8 @@
 # APK Installer (Android)
 This app allows you to make a typical double click on any `.apk` file. It will automatically run `adb install` command to the connected devices.
 
-![Full Video Demo](https://www.youtube.com/watch?v=q-AqVJGGezY)
+[Full Video Demo](https://www.youtube.com/watch?v=q-AqVJGGezY)
+
 ![Gif demo](apk_installer_demo.gif)
 
 ## Usage 1
