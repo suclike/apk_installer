@@ -22,7 +22,7 @@ To do it properly you must:
 
 ## Installation
 
-* Make sure to have Android SDK downloaded and PATH set up in `.bash_profile` (See how to do it [below](#Setting_up_.bash_profile)).
+* Make sure to have Android SDK downloaded and PATH set up in `.bash_profile` (See how to do it below).
 * Download the `APK Installer.app` and drag and drop it to your Applications.
 
 
