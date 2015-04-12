@@ -24,6 +24,7 @@ To do it properly you must:
 
 * Make sure to have Android SDK downloaded and PATH set up in `.bash_profile` (See how to do it below).
 * Download the `Apk Installer.app.zip`, uncompress it and drag and drop to your Applications.
+* Don't forget to go System Settings > Security & Privacy > Allow apps downloaded from: . And press Open anyway if your system complains that this app was downloaded from unknown sources. 
 
 
 ## Setting up .bash_profile
