@@ -6,14 +6,12 @@ This app allows you to make a typical double click on any `.apk` file. It will a
 ![Gif demo](apk_installer_demo.gif)
 
 ## Usage 1
-Drag and drop any .apk file to the APK Installer icon in the Dock and get your app installed on **currently connected devices**.
-
-* To do that, drag and drop APK Installer to your Dock first.
+Put APK Installer in the OS X Dock and then just Drag and drop any .apk file on it. **Currently connected devices** will have that apk installed inmediately.
 
 ## Usage 2
 Double Click on any .apk file and get your app installed on **currently connected devices**.
 
-To do it properly you must:
+To do it properly you must set up the file association first:
 
 * `⌘ + i` on any .apk file.
 * Click on "Open with" dropdown.
@@ -25,7 +23,7 @@ To do it properly you must:
 
 * Make sure to have Android SDK downloaded and PATH set up in `.bash_profile` (See how to do it below).
 * Download the `Apk Installer.app.zip`, uncompress it and drag and drop to your Applications.
-* Don't forget to go "System Settings > Security & Privacy > Allow apps downloaded from". And press **Open anyway** if your system complains that this app was downloaded from unknown sources. 
+* IMPORTANT: Don't forget to go "System Settings > Security & Privacy > Allow apps downloaded from". And press **Open anyway** if your system complains that this app was downloaded from unknown sources. 
 
 
 ## Setting up .bash_profile
