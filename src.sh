@@ -1,7 +1,10 @@
 #!/bin/sh
 ## APK Installer script
 ## Author: Vitaliy Konovalov @vitovalov
-
+if [ $# -eq 0 ]; then
+    echo "No APK file specified"
+    exit 0
+fi
 source ~/.bash_profile
 if ! which adb >/dev/null; then
 	source ~/.zshrc

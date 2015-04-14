@@ -290,11 +290,9 @@
 				<dict>
 					<key>Container</key>
 					<string>List</string>
-					<key>Optional</key>
-					<true/>
 					<key>Types</key>
 					<array>
-						<string>com.apple.cocoa.string</string>
+						<string>*</string>
 					</array>
 				</dict>
 				<key>AMRequiredResources</key>
@@ -415,7 +413,11 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
-					<string>source ~/.bash_profile
+					<string>if [ $# -eq 0 ]; then
+    echo "No APK file specified"
+	exit 0
+fi
+source ~/.bash_profile
 if ! which adb &gt;/dev/null; then
 	source ~/.zshrc
 	if ! which adb &gt;/dev/null; then
@@ -552,7 +554,7 @@ fi</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>427.500000:893.000000</string>
+				<string>427.500000:652.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -660,7 +662,7 @@ fi</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>427.500000:999.000000</string>
+				<string>427.500000:758.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Set Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -795,7 +797,7 @@ fi</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>427.500000:1189.000000</string>
+				<string>427.500000:948.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Display Notification.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -805,40 +807,40 @@ fi</string>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>03BCAA6B-226F-4A9F-90BF-0D0CA89598C8</key>
+		<key>136034C8-D1C9-4C25-8303-13328F087512</key>
 		<dict>
 			<key>from</key>
 			<string>D3994C1D-BDFE-4425-B345-C85E729B4442 - D3994C1D-BDFE-4425-B345-C85E729B4442</string>
 			<key>to</key>
 			<string>B0952443-FC24-46FD-A1D3-BF72222E858A - B0952443-FC24-46FD-A1D3-BF72222E858A</string>
 		</dict>
-		<key>3BE37777-D066-4A5D-8989-44549390D49F</key>
+		<key>2F54B009-1D1E-44B8-8277-DC08AC053B41</key>
 		<dict>
 			<key>from</key>
 			<string>D72697BC-0291-4831-9B71-A5E0791EA7A4 - D72697BC-0291-4831-9B71-A5E0791EA7A4</string>
 			<key>to</key>
 			<string>08A6FBE0-836B-40E7-B018-F453FAC77769 - 08A6FBE0-836B-40E7-B018-F453FAC77769</string>
 		</dict>
-		<key>7CC67DD0-1291-4F68-81A3-096FDFDBABA8</key>
-		<dict>
-			<key>from</key>
-			<string>92B3109E-6649-4C9A-A20D-1BA2458C3319 - 92B3109E-6649-4C9A-A20D-1BA2458C3319</string>
-			<key>to</key>
-			<string>D3994C1D-BDFE-4425-B345-C85E729B4442 - D3994C1D-BDFE-4425-B345-C85E729B4442</string>
-		</dict>
-		<key>805DE472-050F-4454-8F15-7ED91139BC92</key>
-		<dict>
-			<key>from</key>
-			<string>B0952443-FC24-46FD-A1D3-BF72222E858A - B0952443-FC24-46FD-A1D3-BF72222E858A</string>
-			<key>to</key>
-			<string>D72697BC-0291-4831-9B71-A5E0791EA7A4 - D72697BC-0291-4831-9B71-A5E0791EA7A4</string>
-		</dict>
-		<key>A95C9248-BE59-42A4-99A2-0DD22594712F</key>
+		<key>7AE4DDB2-BEAD-4A72-858B-9FA2BD8875F0</key>
 		<dict>
 			<key>from</key>
 			<string>08A6FBE0-836B-40E7-B018-F453FAC77769 - 08A6FBE0-836B-40E7-B018-F453FAC77769</string>
 			<key>to</key>
 			<string>838871B3-D586-4813-A635-7B8F21186E49 - 838871B3-D586-4813-A635-7B8F21186E49</string>
+		</dict>
+		<key>94F29355-250A-4B5E-9C6F-3CF381246383</key>
+		<dict>
+			<key>from</key>
+			<string>B0952443-FC24-46FD-A1D3-BF72222E858A - B0952443-FC24-46FD-A1D3-BF72222E858A</string>
+			<key>to</key>
+			<string>D72697BC-0291-4831-9B71-A5E0791EA7A4 - D72697BC-0291-4831-9B71-A5E0791EA7A4</string>
+		</dict>
+		<key>9B2C0C3B-CBAC-457F-9C60-65275918C5A2</key>
+		<dict>
+			<key>from</key>
+			<string>92B3109E-6649-4C9A-A20D-1BA2458C3319 - 92B3109E-6649-4C9A-A20D-1BA2458C3319</string>
+			<key>to</key>
+			<string>D3994C1D-BDFE-4425-B345-C85E729B4442 - D3994C1D-BDFE-4425-B345-C85E729B4442</string>
 		</dict>
 	</dict>
 	<key>variables</key>
